@@ -1,0 +1,132 @@
+body {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  background-color: #daeeda;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+form input,
+button {
+  all: unset;
+  text-align: initial;
+  outline: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.3em 1em;
+  width: 20em;
+  background-color: aqua;
+  transition: 80ms all linear;
+}
+
+form button {
+  width: initial;
+  background-color: hsl(0, 29%, 64%);
+}
+
+form input:focus {
+  /* outline: 2px solid rgb(169, 143, 194);
+     */
+  box-shadow: 1px 1px 4px rgb(169, 143, 194), -1px -1px 4px rgb(169, 143, 194);
+}
+
+form button:hover {
+  background-color: hsl(0, 29%, 55%);
+  color: white;
+  cursor: pointer;
+}
+
+.image {
+  margin-top: 20px;
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image h1 {
+  text-align: center;
+}
+
+.movie {
+  padding: 0.5em 0;
+  box-shadow: 1px 1px 4px rgb(169, 143, 194), -1px -1px 4px rgb(169, 143, 194);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  border-radius: 3px;
+}
+
+.movie img {
+  border-radius: 5px;
+}
+
+.movie div {
+  font-weight: bold;
+  margin: 0.3em;
+  width: 220px;
+  flex-grow: 1;
+}
+
+.loading {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 10px;
+  height: 60px;
+  background-color: hsl(271, 45%, 85%);
+  animation: loading 1.5s linear infinite;
+  border-radius: 5px;
+}
+
+.bar:nth-child(2) {
+  background-color: hsl(271, 45%, 80%);
+  animation-delay: 0.1s;
+}
+
+.bar:nth-child(3) {
+  background-color: hsl(271, 45%, 75%);
+  animation-delay: 0.2s;
+}
+
+.bar:nth-child(4) {
+  background-color: hsl(271, 45%, 70%);
+  animation-delay: 0.3s;
+}
+
+.bar:nth-child(5) {
+  background-color: hsl(271, 45%, 65%);
+  animation-delay: 0.4s;
+}
+
+.bar:nth-child(6) {
+  background-color: hsl(271, 45%, 60%);
+  animation-delay: 0.5s;
+}
+
+@keyframes loading {
+  from {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+.hidden {
+  display: none;
+}
