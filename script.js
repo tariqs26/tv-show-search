@@ -17,7 +17,7 @@ form.addEventListener("submit", async (evt) => {
   await addDelay(1500);
   const res = await axios.get(`https://api.tvmaze.com/search/shows?`, config);
   document.querySelector(".loading").classList.add("hidden");
-
+  input.value = "";
   // no results
   if (!res.data.length) {
     document.querySelector(".image").innerHTML = "<h1>No results found</h1>";
