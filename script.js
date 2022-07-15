@@ -31,7 +31,7 @@ form.addEventListener("submit", async (evt) => {
     newImg.src =
       show.show.image && show.show.image.medium
         ? show.show.image && show.show.image.medium
-        : "https://via.placeholder.com/220x290";
+        : "https://via.placeholder.com/210x295";
     const title = document.createElement("div");
     title.innerText = show.show.name;
     movie.append(newImg, title);
