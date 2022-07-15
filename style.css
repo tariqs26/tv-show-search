@@ -1,25 +1,25 @@
 body {
   text-align: center;
-  font-family: "DM Sans", sans-serif;
-  background-color: #daeeda;
+  font-family: "Rubik", sans-serif;
+  background-color: #afa9a9;
 }
 
 form {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin: 0 auto;
 }
 
 form input,
 button {
   all: unset;
   text-align: initial;
-  outline: 1px solid #ccc;
-  border-radius: 4px;
   padding: 0.3em 1em;
   width: 20em;
   background-color: aqua;
+  outline: 0.1em solid hsl(253, 47%, 76%);
+  border-radius: 4px;
   transition: 80ms all linear;
 }
 
@@ -29,12 +29,10 @@ form button {
 }
 
 form input:focus {
-  /* outline: 2px solid rgb(169, 143, 194);
-     */
-  box-shadow: 1px 1px 4px rgb(169, 143, 194), -1px -1px 4px rgb(169, 143, 194);
+  box-shadow: 2px 2px 4px rgb(169, 143, 194), -2px -2px 4px rgb(169, 143, 194);
 }
 
-form button:hover {
+form button:hover{
   background-color: hsl(0, 29%, 55%);
   color: white;
   cursor: pointer;
@@ -54,13 +52,20 @@ form button:hover {
 
 .movie {
   padding: 0.5em 0;
-  box-shadow: 1px 1px 4px rgb(169, 143, 194), -1px -1px 4px rgb(169, 143, 194);
+  background-color: hsl(180, 9%, 49%);
+  border-radius: 5px;
+  outline: 0.2em solid hsl(253, 47%, 76%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
-  border-radius: 3px;
+  transition: 100ms all linear;
+}
+
+.movie:hover {
+  background-color: hsl(180, 9%, 44%);
+  color: white;
+  cursor: pointer;
 }
 
 .movie img {
