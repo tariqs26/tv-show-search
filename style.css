@@ -8,6 +8,7 @@ form {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin: 0 auto;
 }
 
 form input,
@@ -71,6 +72,18 @@ form button:hover {
   margin: 0.3em;
   width: 220px;
   flex-grow: 1;
+}
+
+@media (min-width:450px) and (max-width: 510px) {
+  .movie {
+    width: 220px;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    width: 80%;
+  }
 }
 
 .loading {
