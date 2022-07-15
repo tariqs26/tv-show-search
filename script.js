@@ -23,7 +23,6 @@ form.addEventListener("submit", async (evt) => {
     document.querySelector(".image").innerHTML = "<h1>No results found</h1>";
     return;
   }
-  console.log(res.data);
   for (let show of res.data) {
     const movie = document.createElement("div");
     movie.classList.add("movie");
